@@ -1,0 +1,96 @@
+/* Apply a margin and padding reset to the whole page */
+
+* {
+    margin: 0;
+    padding: 1rem;
+    
+    
+  }
+  body{
+    background-color: #DFC6B7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23cfb7a8' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bfa898' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ae9989' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%239e8a79' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%238E7B6A' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    color:#3f3f3d;
+  }
+  
+  /* Center the heading text */
+  h1 {
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  
+  /* Create a grid with 3 equal columns for the items */
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Style each item in the list */
+  li {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #72332e;
+    color:#eeeeee;
+  }
+  
+  /* Center the image within each item and apply a max height and width */
+  li img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 150px;
+  }
+  
+  /* Add spacing between the image and the item title */
+  li h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* Add spacing between the item title and the description */
+  li p:first-of-type {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Add spacing between the description and the price */
+  li p:nth-of-type(2) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Add spacing between the price and the button */
+  li button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to the button */
+  li button:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Responsive code for mobile screens */
+@media screen and (max-width: 1000px) {
+    ul {
+      display: block;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+  }
